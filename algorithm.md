@@ -1,3 +1,7 @@
+---
+
+---
+
 [toc]
 
 
@@ -22,7 +26,7 @@
 | -------- | ---------- |
 | 线性表   | 树，图     |
 
-![image-20240722215359528](D:\Desktop\git\note\algorithm.assets\image-20240722215359528-1724411273301-2-1724411275427-4-1724411769020-1-1724411809477-102.png)
+![image-20240722215359528](./algorithm.assets/image-20240722215359528-1724411273301-2-1724411275427-4-1724411769020-1-1724411809477-102-1724414108616-1.png)
 
 ### 数据的逻辑结构
 
@@ -68,7 +72,7 @@
   - 基本单位是字节
   - 访问不同地址所需时间基本相同（即随机访问）
 
-![image-20240722215701957](D:\Desktop\git\note\algorithm.assets\image-20240722215701957-1724411769020-2-1724411809477-103.png)
+![image-20240722215701957](./algorithm.assets/image-20240722215701957-1724411769020-2-1724411809477-103-1724414108616-2.png)
 
 
 
@@ -76,7 +80,7 @@
 
 - 对结点集K建立一个从K到存储器M的单元的映射:$$K\rightarrow M$$对于每一个节点$$j\in K$$都对应一个唯一的连续存储区域$$c\in M$$
 
-![image-20240722220437383](D:\Desktop\git\note\algorithm.assets\image-20240722220437383-1724411769020-3-1724411809477-101.png)
+![image-20240722220437383](./algorithm.assets/image-20240722220437383-1724411769020-3-1724411809477-101-1724414108616-3.png)
 
 - 关系元组$$(j_1,j_2)\in r$$
 
@@ -84,11 +88,11 @@
 
 - 顺序：存储单元的顺序地址（==线性化==）
 
-![image-20240722222520256](D:\Desktop\git\note\algorithm.assets\image-20240722222520256-1724411809474-54.png)
+![image-20240722222520256](./algorithm.assets/image-20240722222520256-1724411809474-54-1724414108616-4.png)
 
 - 链接：指针的地址指向关系（==非线性的结构组织方法==）
 
-![image-20240722222628356](D:\Desktop\git\note\algorithm.assets\image-20240722222628356-1724411809474-55.png)
+![image-20240722222628356](./algorithm.assets/image-20240722222628356-1724411809474-55-1724414108616-6.png)
 
 - 四类：顺序、链接（基础）、索引、散列（重点）
 
@@ -214,7 +218,7 @@
 
 ---
 
-![image-20240723103110718](D:\Desktop\git\note\algorithm.assets\image-20240723103110718-1724411809474-56.png)
+![image-20240723103110718](./algorithm.assets/image-20240723103110718-1724411809474-56-1724414108616-5.png)
 
 
 
@@ -225,7 +229,7 @@
 # 线性表
 
 - 线性表简称表，是零歌或多个元素又穷序列，通常可以表示成$$k_0,k_1,…,k_{n-1}$$.
-- ![image-20240723103740296](D:\Desktop\git\note\algorithm.assets\image-20240723103740296-1724411809475-57.png)
+- ![image-20240723103740296](./algorithm.assets/image-20240723103740296-1724411809475-57-1724414108616-7.png)
 
 - 二元组$$B=(K,R),K=\{a_0,a_1,…,a_{n-1}\},R=\{r\}$$
 
@@ -239,11 +243,11 @@
 
 - 前驱/后继关系r，具有==反对称性==和==传递性==
 
-![image-20240723105439508](D:\Desktop\git\note\algorithm.assets\image-20240723105439508-1724411809475-58.png)
+![image-20240723105439508](./algorithm.assets/image-20240723105439508-1724411809475-58-1724414108616-8.png)
 
 ==特点==
 
-![image-20240723105528545](D:\Desktop\git\note\algorithm.assets\image-20240723105528545-1724411809475-59.png)
+![image-20240723105528545](./algorithm.assets/image-20240723105528545-1724411809475-59-1724414108616-9.png)
 
 ## 分类
 
@@ -258,7 +262,7 @@
 - 顺序访问型
 - 目录索引型
 
-![image-20240723110207232](D:\Desktop\git\note\algorithm.assets\image-20240723110207232-1724411809475-60.png)
+![image-20240723110207232](./algorithm.assets/image-20240723110207232-1724411809475-60-1724414108616-10.png)
 
 ==按操作划分==
 
@@ -284,7 +288,7 @@
   - 表尾
   - 当前位置
 
-![image-20240723113820272](D:\Desktop\git\note\algorithm.assets\image-20240723113820272-1724411809475-61.png)
+![image-20240723113820272](./algorithm.assets/image-20240723113820272-1724411809475-61-1724414108616-11.png)
 
 ## 线性表的存储结构
 
@@ -293,24 +297,24 @@
 - 按索引值从小到大存放在一篇相邻的连续区域
 - 紧凑结构，存储密度为1
 
-![image-20240723113958349](D:\Desktop\git\note\algorithm.assets\image-20240723113958349-1724411809475-62.png)
+![image-20240723113958349](./algorithm.assets/image-20240723113958349-1724411809475-62-1724414108616-12.png)
 
 ==链表==
 
-- 单链表![image-20240723114100516](D:\Desktop\git\note\algorithm.assets\image-20240723114100516-1724411809475-63.png)（存储效率不如顺序表，有指针开销)
+- 单链表![image-20240723114100516](./algorithm.assets/image-20240723114100516-1724411809475-63-1724414108616-13.png)（存储效率不如顺序表，有指针开销)
 
-- 双链表![image-20240723114130908](D:\Desktop\git\note\algorithm.assets\image-20240723114130908-1724411809475-64.png)
+- 双链表![image-20240723114130908](./algorithm.assets/image-20240723114130908-1724411809475-64-1724414108616-14.png)
 
 - 
-- 循环链表![image-20240723114145161](D:\Desktop\git\note\algorithm.assets\image-20240723114145161-1724411809475-65.png)
+- 循环链表![image-20240723114145161](./algorithm.assets/image-20240723114145161-1724411809475-65-1724414108616-15.png)
 
 ## 线性表的运算
 
-![image-20240723114335505](D:\Desktop\git\note\algorithm.assets\image-20240723114335505-1724411809475-66.png)
+![image-20240723114335505](./algorithm.assets/image-20240723114335505-1724411809475-66-1724414108616-18.png)
 
 ==线性表的类模版==
 
-![image-20240723114407092](D:\Desktop\git\note\algorithm.assets\image-20240723114407092-1724411809475-67.png)
+![image-20240723114407092](./algorithm.assets/image-20240723114407092-1724411809475-67-1724414108616-16.png)
 
 # 顺序表
 
@@ -327,7 +331,7 @@
 
 ## 地址的计算
 
-![image-20240725093835436](D:\Desktop\git\note\algorithm.assets\image-20240725093835436-1724411809475-68.png)
+![image-20240725093835436](./algorithm.assets/image-20240725093835436-1724411809475-68-1724414108616-17.png)
 
 ## 顺序表类定义
 
@@ -553,7 +557,7 @@ public:
 - 空表判断：head=NULL
 - 当前节点$$a_1$$:`curr`
 
-![image-20240725185256026](D:\Desktop\git\note\algorithm.assets\image-20240725185256026-1724411809475-69.png)
+![image-20240725185256026](./algorithm.assets/image-20240725185256026-1724411809475-69-1724414108616-21.png)
 
 ```cpp
 template<class T>class Link{
@@ -839,7 +843,7 @@ int main() {
 
 当前节点$$a_1$$:`fence->next`(curr隐含)
 
-![image-20240725190211238](D:\Desktop\git\note\algorithm.assets\image-20240725190211238-1724411809475-70.png)
+![image-20240725190211238](./algorithm.assets/image-20240725190211238-1724411809475-70-1724414108617-22.png)
 
 - 双链表和循环链表的操作类似
 
@@ -867,11 +871,11 @@ int main() {
   - 存储；利用指针，动态地按照需要为表中新的元素分配存储空间
   - 每个元素都有结构性存储开销
 
-![image-20240725213017535](D:\Desktop\git\note\algorithm.assets\image-20240725213017535-1724411809475-71.png)
+![image-20240725213017535](./algorithm.assets/image-20240725213017535-1724411809475-71-1724414108616-19.png)
 
-![image-20240725213134562](D:\Desktop\git\note\algorithm.assets\image-20240725213134562-1724411809475-72.png)
+![image-20240725213134562](./algorithm.assets/image-20240725213134562-1724411809475-72-1724414108616-20.png)
 
-![image-20240725213302087](D:\Desktop\git\note\algorithm.assets\image-20240725213302087-1724411809475-73.png)
+![image-20240725213302087](./algorithm.assets/image-20240725213302087-1724411809475-73-1724414108617-23.png)
 
 ## 练习题
 
@@ -1047,7 +1051,7 @@ int main(){
   - 后进先出
   - 主要操作：进栈和出栈
 
-  ![image-20240727191056721](D:\Desktop\git\note\algorithm.assets\image-20240727191056721-1724411809475-74.png)
+  ![image-20240727191056721](./algorithm.assets/image-20240727191056721-1724411809475-74-1724414108617-25.png)
 
  ```cpp
  template<class T>
@@ -1126,7 +1130,7 @@ private:
 
 ## ==入栈顺序==
 
-![image-20240727193100971](D:\Desktop\git\note\algorithm.assets\image-20240727193100971-1724411809475-75.png)
+![image-20240727193100971](./algorithm.assets/image-20240727193100971-1724411809475-75-1724414108617-24.png)
 
 
 
@@ -1248,13 +1252,13 @@ int main(){
 
 
 
-![Screenshot_2024-07-28-16-22-16-837_com.orion.notein](D:\Desktop\git\note\algorithm.assets\Screenshot_2024-07-28-16-22-16-837_com.orion.notein-1724411809475-76.png)
+![Screenshot_2024-07-28-16-22-16-837_com.orion.notein](./algorithm.assets/Screenshot_2024-07-28-16-22-16-837_com.orion.notein-1724411809475-76-1724414108617-26.png)
 
 最后一步涉及离散数学的知识
 
 - 为什么栈不允许“读取内部元素”，只能在栈顶操作？
 
-![image-20240728162408449](D:\Desktop\git\note\algorithm.assets\image-20240728162408449-1724411809475-77.png)
+![image-20240728162408449](./algorithm.assets/image-20240728162408449-1724411809475-77-1724414108617-28.png)
 
 栈是一种遵循“后进先出”（LIFO, Last In, First Out）原则的数据结构。它的设计目的是在数据管理过程中提供一种简单而有效的访问方式。这种设计背后的原因有几个关键点：
 
@@ -1341,7 +1345,7 @@ bool top(T & item){
 
 如图：
 
-![image-20240728194932531](D:\Desktop\git\note\algorithm.assets\image-20240728194932531-1724411809475-78.png)
+![image-20240728194932531](./algorithm.assets/image-20240728194932531-1724411809475-78-1724414108617-27.png)
 
 数据成员==top==是一个指向链式栈的首节点（栈顶）的指针，链表的结点类型采用上一章的==Link==模版。进栈操作`push`在链表头插入元素，出栈操作`pop`删除链头元素并释放空间。显而易见，`push`和`pop`的时间代价为`O(1)`
 
@@ -1495,11 +1499,11 @@ bool top(T & item){
     - <常数>   ::=<数字>|<数字><常数>
     - <数字>   ::=0~9
 - 中缀表达式：23+（34*45）/（5+6+7）
-  - ![image-20240814111409063](D:\Desktop\git\note\algorithm.assets\image-20240814111409063-1724411809475-79.png)
+  - ![image-20240814111409063](./algorithm.assets/image-20240814111409063-1724411809475-79-1724414108617-29.png)
 
 - 后缀表达式：23 34 45 * 5 6 + 7 + / +
 
-![5c7f4b2c63241fe2042adaf77eef8e4](D:\Desktop\git\note\algorithm.assets\5c7f4b2c63241fe2042adaf77eef8e4-1724411809475-80.jpg)
+![5c7f4b2c63241fe2042adaf77eef8e4](./algorithm.assets/5c7f4b2c63241fe2042adaf77eef8e4-1724411809475-80-1724414108617-30.jpg)
 
 ### 中缀表达式到后缀表达式的转换
 
@@ -1617,7 +1621,7 @@ int main(){
 
  23 34 45 * 5 6 + 7 + / +
 
-![image-20240814224919876](D:\Desktop\git\note\algorithm.assets\image-20240814224919876-1724411809475-81.png)
+![image-20240814224919876](./algorithm.assets/image-20240814224919876-1724411809475-81-1724414108617-31.png)
 
 ==代码（纯手敲）==
 
@@ -1795,23 +1799,23 @@ int main()
 
 ==绘图解释：==
 
-​	![image-20240821083958353](D:\Desktop\git\note\algorithm.assets\image-20240821083958353-1724411809475-82.png)
+​	![image-20240821083958353](./algorithm.assets/image-20240821083958353-1724411809475-82-1724414108617-32.png)
 
-![image-20240821084014027](D:\Desktop\git\note\algorithm.assets\image-20240821084014027-1724411809475-83.png)
+![image-20240821084014027](./algorithm.assets/image-20240821084014027-1724411809475-83-1724414108617-33.png)
 
-![image-20240821084036419](D:\Desktop\git\note\algorithm.assets\image-20240821084036419-1724411809475-84.png)
+![image-20240821084036419](./algorithm.assets/image-20240821084036419-1724411809475-84-1724414108617-34.png)
 
-![image-20240821084047094](D:\Desktop\git\note\algorithm.assets\image-20240821084047094-1724411809475-85.png)
+![image-20240821084047094](./algorithm.assets/image-20240821084047094-1724411809475-85-1724414108617-35.png)
 
-![image-20240821084059931](D:\Desktop\git\note\algorithm.assets\image-20240821084059931-1724411809476-86.png)
+![image-20240821084059931](./algorithm.assets/image-20240821084059931-1724411809476-86-1724414108617-36.png)
 
-![image-20240821084109296](D:\Desktop\git\note\algorithm.assets\image-20240821084109296-1724411809476-87.png)
+![image-20240821084109296](./algorithm.assets/image-20240821084109296-1724411809476-87-1724414108617-37.png)
 
-![image-20240821084118290](D:\Desktop\git\note\algorithm.assets\image-20240821084118290-1724411809476-88.png)
+![image-20240821084118290](./algorithm.assets/image-20240821084118290-1724411809476-88-1724414108617-38.png)
 
-![image-20240821084127336](D:\Desktop\git\note\algorithm.assets\image-20240821084127336-1724411809476-89.png)
+![image-20240821084127336](./algorithm.assets/image-20240821084127336-1724411809476-89-1724414108617-39.png)
 
-![image-20240821084139984](D:\Desktop\git\note\algorithm.assets\image-20240821084139984-1724411809476-90.png)
+![image-20240821084139984](./algorithm.assets/image-20240821084139984-1724411809476-90-1724414108617-40.png)
 
 ## 递归转为非递归
 
@@ -2117,21 +2121,21 @@ bool knap(int s,int n){
 
 - 步骤三：程序分析
 
-  ![image-20240821105012251](D:\Desktop\git\note\algorithm.assets\image-20240821105012251-1724411809476-91.png)
+  ![image-20240821105012251](./algorithm.assets/image-20240821105012251-1724411809476-91-1724414108617-41.png)
 
-![image-20240821105520771](D:\Desktop\git\note\algorithm.assets\image-20240821105520771-1724411809476-92.png)
+![image-20240821105520771](./algorithm.assets/image-20240821105520771-1724411809476-92-1724414108617-42.png)
 
 - 步骤四：划分标签、翻译
 
-  ![image-20240821110438284](D:\Desktop\git\note\algorithm.assets\image-20240821110438284-1724411809476-93.png)
+  ![image-20240821110438284](./algorithm.assets/image-20240821110438284-1724411809476-93-1724414108617-43.png)
 
-![image-20240821110458148](D:\Desktop\git\note\algorithm.assets\image-20240821110458148-1724411809476-94.png)
+![image-20240821110458148](./algorithm.assets/image-20240821110458148-1724411809476-94-1724414108617-44.png)
 
-![image-20240821110508887](D:\Desktop\git\note\algorithm.assets\image-20240821110508887-1724411809476-95.png)
+![image-20240821110508887](./algorithm.assets/image-20240821110508887-1724411809476-95-1724414108617-45.png)
 
-![image-20240821110519729](D:\Desktop\git\note\algorithm.assets\image-20240821110519729-1724411809476-96.png)
+![image-20240821110519729](./algorithm.assets/image-20240821110519729-1724411809476-96-1724414108617-46.png)
 
-![image-20240821110531568](D:\Desktop\git\note\algorithm.assets\image-20240821110531568-1724411809476-97.png)
+![image-20240821110531568](./algorithm.assets/image-20240821110531568-1724411809476-97-1724414108617-47.png)
 
 小结：t次递归调用，添加t+2个标签
 
@@ -2538,7 +2542,7 @@ template<class T>
 
   
 
-![image-20240822132432039](D:\Desktop\git\note\algorithm.assets\image-20240822132432039-1724411809476-98.png)
+![image-20240822132432039](./algorithm.assets/image-20240822132432039-1724411809476-98-1724414108617-48.png)
 
 
 
@@ -2598,7 +2602,7 @@ bool arrQueue<T>::deQueue(T& item){//返回队头元素并从队列中删除
 
 
 
-![image-20240822135823322](D:\Desktop\git\note\algorithm.assets\image-20240822135823322-1724411809476-99.png)
+![image-20240822135823322](./algorithm.assets/image-20240822135823322-1724411809476-99-1724414108617-49.png)
 
 
 
@@ -2672,7 +2676,7 @@ bool deQueue(T* item){
   - 操作系统的资源管理
 - 宽度优先搜索
 
-![img](D:\Desktop\git\note\algorithm.assets\047fea9a94fbdae40bb83664e00f92ac-1724411809476-100.png)
+![img](./algorithm.assets/047fea9a94fbdae40bb83664e00f92ac-1724411809476-100-1724414108617-50.png)
 
 
 
